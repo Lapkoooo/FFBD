@@ -1,0 +1,494 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+
+
+
+
+body {
+  background: #10451D;
+}
+.wrapper {
+  margin: 0px auto;
+  max-width: 1140px;
+  padding: 0px 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 80px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.nav a:hover {
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+border-bottom: 1px solid white;
+}
+.nav a {
+text-decoration: none;
+color: #fff;
+font-weight: 500;
+font-style: normal;
+font-family: "Inter", sans-serif;
+font-size: 18px;
+line-height: 1.5;
+text-align: left;
+}
+.logo_text {
+font-weight: 400;
+font-style: normal;
+font-family: "Rubik Mono One", "Rubik Mono One Placeholder", monospace;
+color: #fff;
+font-size: 24px;
+letter-spacing: 1px;
+line-height: 2;
+}
+.header__burger-btn {
+display: none;
+position: relative;
+width: 40px;
+height: 40px;
+border: none;
+background-color: transparent;
+z-index: 2;
+}
+.header__burger-btn span {
+position: absolute;
+width: 30px;
+height: 3px; 
+background-color: white;
+left: 5px;
+transition: transform .5s, opacity .5s, background-color .5s;
+}
+.header__burger-btn span:nth-child(1){
+transform: translateY(10px);
+}
+.header.close .header__burger-btn span:nth-child(1){
+transform: translateY(0) rotate(45deg);
+}
+.header.close .header__burger-btn span:nth-child(2){
+opacity: 0;
+}
+.header.close .header__burger-btn span:nth-child(3){
+transform: translateY(0) rotate(-45deg);
+}
+.header__burger-btn span:nth-child(3){
+transform: translateY(-10px);
+}
+
+
+
+h1 {
+  width: 100%;
+  position: relative;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Rubik Mono One", "Rubik Mono One Placeholder", monospace;
+  font-size: 130px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: center;
+  background: linear-gradient(to right, #9ef01a 0%, #006400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0px; 
+}
+.name_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.studsovet_text {
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Nunito", "Nunito Placeholder", sans-serif;
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: 0em;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px 30px 60px;
+  background-color: #10451D;
+  flex-wrap: wrap;
+}
+.horizontal {
+  width: 100%;
+  height: min-content; /* 131px */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.verticalh {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  text-align: left;
+}
+.verticalrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.verticala {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: #919191;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+}
+.copyright {
+  height: min-content; /* 51px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px 0px 0px;
+  overflow: visible;
+  flex-wrap: wrap;
+}
+.copyrightp  {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: #919191;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+
+
+.swiper {
+  width: 500px;
+  height: 500px;
+  position: static;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: 380px;
+}
+
+
+.slide1 {background: url(/img/studsovet/1.JPG);}
+.slide2 {background: url(/img/studsovet/2.JPG);}
+.slide3 {background: url(/img/studsovet/3.JPG);}
+.slide4 {background: url(/img/studsovet/4.JPG);}
+.slide5 {background: url(/img/studsovet/5.JPG);}
+.slide6 {background: url(/img/studsovet/6.JPG);}
+.slide7 {background: url(/img/studsovet/7.JPG);}
+.slide8 {background: url(/img/studsovet/8.JPG);}
+.slide9 {background: url(/img/studsovet/9.JPG);}
+.slide10 {background: url(/img/studsovet/10.JPG);}
+.slide11 {background: url(/img/studsovet/11.JPG);}
+.slide12 {background: url(/img/studsovet/12.JPG);}
+.slide13 {background: url(/img/studsovet/13.JPG);}
+.slide14 {background: url(/img/studsovet/14.JPG);}
+.slide15 {background: url(/img/studsovet/15.JPG);}
+.slide16 {background: url(/img/studsovet/16.JPG);}
+.slide17 {background: url(/img/studsovet/17.JPG);}
+.slide18 {background: url(/img/studsovet/18.JPG);}
+.slide19 {background: url(/img/studsovet/19.JPG);}
+.slide20 {background: url(/img/studsovet/20.JPG);}
+.slide21 {background: url(/img/studsovet/21.JPG);}
+
+.for-small-screens {
+  font-size: 75px;
+}
+
+#more {
+  margin-top: 50px;
+}
+#more2 {
+  margin-top: 25px;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+      max-width: 1140px;
+  }
+  .for-small-screens {
+    display:none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 970px;
+    height: none;
+    padding-bottom: 100px;
+  }
+  .name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header__burger-btn {
+    display: block;
+    z-index: 3;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .header {
+    position: fixed;
+    bottom: 0;
+    background-color: #10451D;
+    width: 100%;
+    left: 0;
+    justify-content: center; 
+    height: 90px;
+    z-index: 99;
+  }
+  .logo_text {
+    display: block;
+    z-index: 3;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+  }
+  
+  .nav {
+    position: fixed;
+    left: -110%;
+    width: 100%;
+    bottom: 85px;
+    background: rgb(12,51,22);
+    background: linear-gradient(180deg, rgba(12,51,22,1) 0%, rgba(16,69,29,1) 100%);
+    display: block;
+    padding: 20px 20px 20px 20px;
+    transition: transform .5s;
+    z-index: 2;
+    text-align: center;
+  }
+  a {
+    font-size: 24px;
+  }
+  li {
+    padding: 20px;
+  }
+  .logo_text {
+    font-size: 30px;
+  }
+  .header.close .nav {
+    transform: translateX(100%);
+  }
+  #for-small-screens {
+    display: none;
+  }
+  .nav a {
+    font-size: 24px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+      max-width: 720px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .swiper {
+    width: 450px;
+    height: 450px;
+  }
+
+  .slide1 {background: url(/img/studsovet/FBD/1.png);}
+  .slide2 {background: url(/img/studsovet/FBD/2.png);}
+  .slide3 {background: url(/img/studsovet/FBD/3.png);}
+  .slide4 {background: url(/img/studsovet/FBD/4.png);}
+  .slide5 {background: url(/img/studsovet/FBD/5.png);}
+  .slide6 {background: url(/img/studsovet/FBD/6.png);}
+  .slide7 {background: url(/img/studsovet/FBD/7.png);}
+  .slide8 {background: url(/img/studsovet/FBD/8.png);}
+  .slide9 {background: url(/img/studsovet/FBD/9.png);}
+  .slide10 {background: url(/img/studsovet/FBD/10.png);}
+  .slide11 {background: url(/img/studsovet/FBD/11.png);}
+  .slide12 {background: url(/img/studsovet/FBD/12.png);}
+  .slide13 {background: url(/img/studsovet/FBD/13.png);}
+  .slide14 {background: url(/img/studsovet/FBD/14.png);}
+  .slide15 {background: url(/img/studsovet/FBD/15.png);}
+  .slide16 {background: url(/img/studsovet/FBD/16.png);}
+  .slide17 {background: url(/img/studsovet/FBD/17.png);}
+  .slide18 {background: url(/img/studsovet/FBD/18.png);}
+  .slide19 {background: url(/img/studsovet/FBD/19.png);}
+  .slide20 {background: url(/img/studsovet/FBD/20.png);}
+  .slide21 {background: url(/img/studsovet/FBD/21.png);}
+}
+
+.for-small-screens {
+  display:none;
+}
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  } 
+  h1 {
+    font-size: 90px;
+    break-inside: auto;
+  }
+  .studsovet_text {
+    font-size: 22px;
+  }
+  .swiper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .slide1 {background: url(/img/studsovet/FBD350x350/1.png);}
+  .slide2 {background: url(/img/studsovet/FBD350x350/2.png);}
+  .slide3 {background: url(/img/studsovet/FBD350x350/3.png);}
+  .slide4 {background: url(/img/studsovet/FBD350x350/4.png);}
+  .slide5 {background: url(/img/studsovet/FBD350x350/5.png);}
+  .slide6 {background: url(/img/studsovet/FBD350x350/6.png);}
+  .slide7 {background: url(/img/studsovet/FBD350x350/7.png);}
+  .slide8 {background: url(/img/studsovet/FBD350x350/8.png);}
+  .slide9 {background: url(/img/studsovet/FBD350x350/9.png);}
+  .slide10 {background: url(/img/studsovet/FBD350x350/10.png);}
+  .slide11 {background: url(/img/studsovet/FBD350x350/11.png);}
+  .slide12 {background: url(/img/studsovet/FBD350x350/12.png);}
+  .slide13 {background: url(/img/studsovet/FBD350x350/13.png);}
+  .slide14 {background: url(/img/studsovet/FBD350x350/14.png);}
+  .slide15 {background: url(/img/studsovet/FBD350x350/15.png);}
+  .slide16 {background: url(/img/studsovet/FBD350x350/16.png);}
+  .slide17 {background: url(/img/studsovet/FBD350x350/17.png);}
+  .slide18 {background: url(/img/studsovet/FBD350x350/18.png);}
+  .slide19 {background: url(/img/studsovet/FBD350x350/19.png);}
+  .slide20 {background: url(/img/studsovet/FBD350x350/20.png);}
+  .slide21 {background: url(/img/studsovet/FBD350x350/21.png);}
+  
+  
+  
+  .horizontal {
+    justify-content: start;
+  }
+
+  .for-large-screens {
+    display:none;
+  }
+  .for-small-screens {
+    display: block;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper {
+    max-width: 340px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 37px;
+  }
+  .studsovet_text {
+    font-size: 24px;
+  }
+  .swiper {
+    width: 200px;
+    height: 400px;
+  }
+  .horizontal {
+    justify-content: start;
+  }
+
+  .slide1 {background: url(/img/studsovet/FBD200/1.png);}
+  .slide2 {background: url(/img/studsovet/FBD200/2.png);}
+  .slide3 {background: url(/img/studsovet/FBD200/3.png);}
+  .slide4 {background: url(/img/studsovet/FBD200/4.png);}
+  .slide5 {background: url(/img/studsovet/FBD200/5.png);}
+  .slide6 {background: url(/img/studsovet/FBD200/6.png);}
+  .slide7 {background: url(/img/studsovet/FBD200/7.png);}
+  .slide8 {background: url(/img/studsovet/FBD200/8.png);}
+  .slide9 {background: url(/img/studsovet/FBD200/9.png);}
+  .slide10 {background: url(/img/studsovet/FBD200/10.png);}
+  .slide11 {background: url(/img/studsovet/FBD200/11.png);}
+  .slide12 {background: url(/img/studsovet/FBD200/12.png);}
+  .slide13 {background: url(/img/studsovet/FBD200/13.png);}
+  .slide14 {background: url(/img/studsovet/FBD200/14.png);}
+  .slide15 {background: url(/img/studsovet/FBD200/15.png);}
+  .slide16 {background: url(/img/studsovet/FBD200/16.png);}
+  .slide17 {background: url(/img/studsovet/FBD200/17.png);}
+  .slide18 {background: url(/img/studsovet/FBD200/18.png);}
+  .slide19 {background: url(/img/studsovet/FBD200/19.png);}
+  .slide20 {background: url(/img/studsovet/FBD200/20.png);}
+  .slide21 {background: url(/img/studsovet/FBD200/21.png);}
+}
+

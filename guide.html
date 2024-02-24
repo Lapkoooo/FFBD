@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_guide.css">
+        <script src="main.js"></script>
+        <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+     
+        ym(96117650, "init", {
+             clickmap:true,
+             trackLinks:true,
+             accurateTrackBounce:true,
+             webvisor:true
+        });
+     </script>
+     <noscript><div><img src="https://mc.yandex.ru/watch/96117650" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+     <!-- /Yandex.Metrika counter -->
+    </head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        <p class="logo_text">ФФБД</p>
+        <ul class="nav">
+            <li class=""><a href="/main.html">Главная</a></li>
+            <li class=""><a href="/decanat.html">Деканат</a></li>
+            <li class=""><a href="/sdutsovet.html">Студсовет</a></li>
+            <!-- <li class=""><a href="/news.html">Новости</a></li> -->
+            <li class=""><a href="/guide.html">Поступающим</a></li>
+            <li class=""><a href="http://bseu.by/schedule/"  id="schedule" target="_blank">Расписание</a></li>
+        </ul>
+    </header>
+        <div class="guide_name">
+            <div class="guide_content">
+                <h1>Гайд для поступающих!</h1>
+                <p class="guide_p">Здесь Вы найдете всю важную и полезную информацию касательно поступления: начиная с нужных документов и заканчивая данными о общежитиях!</p>
+            </div>
+        </div>
+        <div class="guide_grid">
+            <div class="grid">
+                <div class="flex_item1">
+                    <a href="#dcmnts" class="doc_link">
+                        <div class="item_docs">
+                        <div class="item_docs_text">
+                            <p class="h_item_text">Документы</p>
+                            <p class="p_item_text">Список необходимых документов</p>
+                        </div>
+                        <img src="/img/bernd-klutsch-nE2HV5AUXFo-unsplash.jpg" alt="" class="img_item">
+                    </div>
+                    </a>
+                    <a href="#map" class="map_link">
+                        <div class="item_map">
+                        <div class="item_map_text">
+                            <p class="h_item_text">Карта</p>
+                            <p class="p_item_text">Навигация по университету</p>
+                        </div>
+                        <img src="/img/annie-spratt-AFB6S2kibuk-unsplash.jpg" alt="" class="img_item">
+                    </div>
+                    </a>
+                </div>
+                <div class="flex_item2">
+                    <a href="http://bseu.by/russian/abiturient/plan1.htm" target="_blank" class="points_link">
+                        <div class="item_points";>
+                            <div class="item_points_text">
+                            <p class="h_item_text">Баллы прошлых лет</p>
+                            <p class="p_item_text">Информация о баллах в прошлых годах</p>
+                            </div>
+                            <img src="/img/mika-baumeister-Wpnoqo2plFA-unsplash.jpg" alt="" class="img_item">
+                        </div>
+                    </a>
+                    <a href="" class="hostel_link">
+                        <div class="item_hostel">
+                            <div class="item_hostel_text">
+                                <p class="h_item_text">Общежитие</p>
+                                <p class="p_item_text">Самое важное об общежитиях</p>
+                            </div>
+                            <img src="/img/hostel.jpeg" id="hostel" class="img_item hostel">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="documents_block">
+            <h3 class="dcmnts_h3" id="dcmnts">Документы</h3>
+            <p class="more_info_p">Документы необходимые для поступления:</p>
+            <ul>
+                <li>заявление на имя ректора университета по установленной форме;</li>
+                <li>оригинал аттестата об общем среднем образовании;</li>
+                <li>три сертификата централизованного тестирования;</li>
+                <li>характеристику, выданную учреждением общего среднего образования;</li>
+                <li>медицинскую справку о состоянии здоровья по форме, установленной Министерством здравоохранения, выданную в 2023 году;</li>
+                <li>документы, подтверждающие право абитуриента на льготы при зачислении для получения высшего образования;</li>
+                <li>6 фотографий размером 3х4 см (черно-белые или цветные).</li>
+            </ul>
+        </div>
+        <div class="map_block">
+            <h3 id="map">Карта Университета</h3>
+            <img src="/img/map_bseu.jpg" alt="">
+            <div class="more_info_map">
+            <p class="more_info_p">Бо́льшая часть занятий будет происходить в Корпусе №1, некоторая часть в корпусах №2 и №3.</p>
+            <p class="more_info_p">В столовую можно попасть как из второго корпуса(переход находится на 2 этаже) так и с улицы, вход находится со стороны 6 корпуса.</p>
+            <p class="more_info_p">В библиотеке можно будет получить книги, провести время на форточке, взять дополнительную литературу, зайти с компьютера университета, чтобы получить доступ к некоторым файлам. Вход туда находится в первом корпус напротив гардеробов(лестница вниз).</p>
+            <p class="more_info_p">В 6 корпусе находится паспортный стол, в него нужно будет идти при заселении в общежитие.</p>
+            <p class="more_info_p">В 2 корпусе находится актовый зал, в нем будет происходить зачисление и множество крутых мероприятий как всего университета, так и нашего факультета.</p>
+            <p class="more_info_p">Основная часть пар по физре будет происходить в спортивном комплексе, но и во 2 корпусе есть спортивный зал, в котором занимаются самбо</p>
+            </div>
+        </div>
+        <div class="hostel_block">
+            <h3>Общежитие</h3>
+            <div class="gallery">
+                <div class="div1"><img src="/img/hostel/46.jpeg" alt="" class="hostelphoto"></div>
+                <div class="div2"><img src="/img/hostel/52-1.jpeg" alt="" class="hostelphoto"></div>
+                <div class="div3"><img src="/img/hostel/48-1.jpeg" alt="" class="hostelphoto"></div>
+                <div class="div4"><img src="/img/hostel/49-1.jpeg" alt="" class="hostelphoto"></div>
+                <div class="div5"><img src="/img/hostel/50-1.jpeg" alt="" class="hostelphoto"></div>
+                <div class="div6"><img src="/img/hostel/51-1.jpeg" alt="" class="hostelphoto"></div>
+            </div>
+            <div class="hostel_text_container">
+                <h3>Основная информация</h3>
+                <p> 
+                    1. Холодильник в комнату  берётся в аренду (не старше 10 лет и не выше 180 см)<br>
+                    2. На 1 этаже расположена прачечная со стиральными машинами (стирка платная), есть гладильная и комната для сушки белья.<br>
+                    3. Общежитие открыто с 6:00 до 24:00 (Несовершеннолетние по правилам проживания до 23:00). Впускают в любое время суток.<br>
+                    4. Есть беседа общаги, где можно попросить у других ребят какую-нибудь вещь или наоборот помочь.<br>
+                    5. Существует часы отработки (всего надо отработать 40 часов, по 4 часа в месяц). Часы можно отработать помогая администрации общежития.<br>
+                </p>
+                <h3>Дополнительная информация</h3>
+                <p>
+                    1. Общежитие блочного типа. <br>
+                    2. Блок состоит из 2-х комнат А и Б. <br>
+                    3. А комната рассчитана на 3 человек, Б - на 2. <br>
+                    4. В каждом блоке есть свой санузел и душ. <br>
+                    5. На этаже 10 блоков. <b></b>
+                    6. Большая часть проживающих студенты ФФБД. <br>
+                    7. Оплата за проживание с января 2024 г. Составляет 32 руб.(оплата ежемесячная до 25 числа). <br>
+                    8. Вход посетителей  в общежитие осуществляется с 18:00 до 22:00 (при наличии дежурных студентов на вахте). <br>
+                    9. На каждом этаже есть своя комната соцкультбыта (где проводятся различные мероприятия). <br>
+                    10. На каждом этаже 1 кухня (график работы кухонь с 6:00 до 23:00). <br>
+                    11. До корпусов БГЭУ с общежития 10 минут ходьбы. <br>
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="horizontal">
+                <div class="vertical">
+                    <a href="http://bseu.by/" class="verticala" target="_blank">БГЭУ</a>
+                    <div class="verticalrows">
+                        <a href="https://edu.gov.by/" class="verticala" target="_blank">Министерство Образования</a>
+                        <a href="https://minfin.gov.by/" class="verticala" target="_blank">Министерство финансов</a>
+                        <a href="https://www.nbrb.by/" class="verticala" target="_blank">Национальный банк</a>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <p class="verticalh">Наши соцсети</p>
+                    <div class="verticalrows">
+                        <a href="https://www.instagram.com/ffbd.bseu/" class="verticala" target="_blank">Инстаграмм</a>
+                        <a href="https://t.me/ffbd2023" class="verticala" target="_blank">Телеграмм</a>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <p class="verticalh">Связь с нами</p>
+                    <div class="verticalrows">
+                        <a href="/decanat.html" class="verticala" target="_blank">Деканат</a>
+                        <a href="/sdutsovet.html" class="verticala" target="_blank">Студсовет</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyrightp">© 2023 БГЭУ, ФФБД</p>
+                <p class="copyrightp">Разработка и дизайн: Лапко Вадим</p>
+                <p class="copyrightp"><a href="https://forms.gle/YMmC2u3WnapKhZub7" class="copyrightp">Сообщить об ошибке / Предложить улучшения</a></p>         
+            </div>
+        </div>
+    </div>
+</body>
+</html>
